@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Sign in & Sign up Form</title>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <span class="text-logo">Simple Login Form</span>
+      <ul>
+        <li><a href="#">Sign in</a></li>
+        <!-- switch Toggle -->
+        <li class="switch">
+          <div><i class="fas fa-sun"></i></div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sign in Cotainer -->
+  <div class="signin-container">
+    <!-- Form -->
+    <form action="">
+
+      <!-- Sign in Heading -->
+      <h1 class="sign-in"><i class="fas fa-user-circle"></i></h1>
+      
+      <!-- Show alert -->
+      <div class="show-alert"></div>
+      <!-- Input for username -->
+      <input type="text" name="username" class="user" id="user-name" placeholder="Enter your username">
+      <!-- Input for password -->
+      <input type="password" name="password" class="pass" id="password" placeholder="Enter your password">
+      <!-- Sign in Button -->
+      <input type="submit" value="Sign in">
+      <!-- Forgot Password -->
+      <div class="forgot-pass">
+        <a href="#">Forgot Password</a>
+      </div>
+      <div class="signin-with">
+        <h3>Sign in with</h3>
+      </div>
+      <div class="third-party-signin">
+        <div class="google">
+          <i class="fab fa-google-plus"></i>
+        </div>
+        <div class="facebook">
+          <i class="fab fa-facebook"></i>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
