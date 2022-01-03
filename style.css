@@ -91,13 +91,22 @@ nav .nav-container .switch .fa-sun {
   padding-top: 10px;
 }
 
+.signin-container form .show-alert {
+  display: none;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: rgb(241, 50, 50);
+  color: #fff;
+  font-size: 14px;
+}
+
 .signin-container form input {
   display: block;
   width: 350px;
   height: 40px;
   padding: 5px;
   font-size: 16px;
-  margin: 15px 15px;
+  margin: 0 15px 15px 15px;
   color: #333;
   outline: none;
   border: none;
@@ -114,6 +123,7 @@ nav .nav-container .switch .fa-sun {
   background-color: #5656fd;
   color: #fff;
   letter-spacing: 1px;
+  margin-top: 20px;
 }
 
 .signin-container form input[type="submit"]:hover {
@@ -132,6 +142,16 @@ nav .nav-container .switch .fa-sun {
   margin-bottom: 15px;
 }
 
+.loading {
+  display: none;
+  justify-content: center;
+}
+
+.loading img {
+  width: 220px;
+  height: 120px;
+}
+
 .signin-container form .forgot-pass a:hover {
   color: #3131fd;
 }
@@ -148,15 +168,21 @@ nav .nav-container .switch .fa-sun {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+
+.signin-container form .third-party-signin .google,
+.signin-container form .third-party-signin .facebook {
+  cursor: pointer;
   padding: 10px 0;
   font-size: 25px;
-  gap: 10px;
   color: #444;
 }
 
 .signin-container form .third-party-signin .google:hover {
   color: #cc0808;
   transition: 0.4s;
+  
 }
 
 
