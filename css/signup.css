@@ -113,9 +113,10 @@ nav .nav-container .switch .fa-sun {
   display: none;
   margin: 10px 0;
   padding: 8px;
-  background-color: rgb(241, 50, 50);
+  background-color: #e73a3a;
   color: #fff;
   font-size: 14px;
+  border-radius: 4px;
 }
 
 .signin-container form input {
@@ -142,6 +143,7 @@ nav .nav-container .switch .fa-sun {
   color: #fff;
   letter-spacing: 1px;
   margin-top: 20px;
+  border-radius: 20px;
 }
 
 .signin-container form input[type="submit"]:hover {
