@@ -15,6 +15,9 @@ html, body {
 /* Navigation Style*/
 nav {
   background-color: #3434ff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 nav .nav-container {
@@ -48,9 +51,9 @@ nav .nav-container ul li a {
 nav .nav-container .switch {
   display: flex;
   align-items: center;
-  width: 55px;
-  height: 30px;
-  padding: 4px 3px;
+  width: 50px;
+  height: 28px;
+  padding: 3px 4px;
   background-color: rgb(233, 233, 233);
   border-radius: 20px;
 }
@@ -63,7 +66,7 @@ nav .nav-container .switch > div{
 
 nav .nav-container .switch .fa-sun {
   color: #ececec;
-  padding: 4px;
+  padding: 3px;
 }
 /* ============== */
 
@@ -152,11 +155,16 @@ nav .nav-container .switch .fa-sun {
   margin: 0 15px;
 }
 
+.signin-container form .forgot-pass span {
+  color: #444;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
 .signin-container form .forgot-pass a {
   text-decoration: none;
   color: #444;
   font-size: 14px;
-  margin-bottom: 15px;
 }
 
 .loading {
@@ -165,8 +173,8 @@ nav .nav-container .switch .fa-sun {
 }
 
 .loading img {
-  width: 220px;
-  height: 120px;
+  width: 180px;
+  height: 100px;
 }
 
 .signin-container form .forgot-pass a:hover {

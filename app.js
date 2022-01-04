@@ -1,41 +1,42 @@
-const form = document.querySelector('form');
-const userName = document.querySelector('#user-name');
-const passWord = document.querySelector('#password');
-const showAlert = document.querySelector('.show-alert');
+// const form = document.querySelector('form');
+// const userName = document.querySelector('#user-name');
+// const passWord = document.querySelector('#password');
+// const showAlert = document.querySelector('.show-alert');
 
-form.addEventListener('submit', function(e) {
+// form.addEventListener('submit', function(e) {
 
-  if (userName.value !== "" && passWord.value !== "") {
+//   if (userName.value !== "" && passWord.value !== "") {
 
-    const loading = document.querySelector('.loading');
-    loading.style.display = 'flex';
-
-    setTimeout(() => {
-      loading.style.display = 'none';
-    }, 3500);
+//     // Loading
+//     document.querySelector('.loading').style.display = 'flex';
+//     // Disappear after 3.5 seconds
+//     setTimeout(() => {
+//       document.querySelector('.loading').style.display = 'none';
+//     }, 3500);
     
     
-  } else {
-    showAlert.style.display = 'block';
-    showAlert.innerHTML = `<p>Please fill in all fields.</p>`;
-
-    setTimeout(() => {
-      showAlert.style.display = 'none';
-    }, 3000);
+//   } else {
+//     // Show alert
+//     showAlert.style.display = 'block';
+//     showAlert.innerHTML = `<p>Please fill in all fields.</p>`;
+//     // Disappear alert after 3 seconds
+//     setTimeout(() => {
+//       showAlert.style.display = 'none';
+//     }, 3000);
     
-  }
+//   }
 
-  // Clear Fields
-  clearField();
+//   // Clear Fields
+//   clearField();
   
   
   
  
-  e.preventDefault();
-})
+//   e.preventDefault();
+// })
 
-
-function clearField() {
-  userName.value = '';
-  passWord.value = '';
-}
+// // clear fields
+// function clearField() {
+//   userName.value = '';
+//   passWord.value = '';
+// }

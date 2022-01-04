@@ -5,16 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>Sign In</title>
+  <link rel="stylesheet" href="css/signup.css">
+  <title>Sign Up</title>
 </head>
 <body>
-
   <nav>
     <div class="nav-container">
       <span class="text-logo">Simple Login Form</span>
       <ul>
-        <li><a href="signup.html">Sign up</a></li>
+        <li><a href="index.html">Sign in</a></li>
         <!-- switch Toggle -->
         <li class="switch">
           <div><i class="fas fa-sun"></i></div>
@@ -30,25 +29,26 @@
 
       <!-- Sign in Heading -->
       <h1 class="sign-in"><i class="fas fa-user-circle"></i></h1>
-      <h2>Welcome, User</h2>
+      <h2>Create Account</h2>
       
       <!-- Show alert -->
-      <div class="show-alert">
+      <div class="show-alert"></div>
 
-      </div>
+      <!-- Input for email -->
+      <input type="email" name="email" class="email-input" id="email" placeholder="Email">
+
       <!-- Input for username -->
-      <input type="text" name="username" class="user" id="user-name" placeholder="Enter your username">
+      <input type="text" name="username" class="user" id="user-name" placeholder="Username">
 
       <!-- Input for password -->
-      <input type="password" name="password" class="pass" id="password" placeholder="Enter your password">
+      <input type="password" name="password" class="pass" id="password" placeholder="Password">
 
       <!-- Sign in Button -->
-      <input type="submit" value="Sign in">
+      <input type="submit" value="Sign Up">
 
       <!-- Forgot Password -->
       <div class="forgot-pass">
-        <a href="#">Forgot Password</a>
-        <a href="signup.html">Create an account</a>
+        <span>Already have an account? <a href="index.html">Sign in</a></span>
       </div>
 
       <!-- Show loading GIF -->
@@ -57,7 +57,7 @@
       </div>
 
       <div class="signin-with">
-        <h3>Sign in with</h3>
+        <h3>Sign up with</h3>
       </div>
 
       <div class="third-party-signin">
@@ -73,7 +73,8 @@
     </form>
   </div>
   
+  <div class="haha">haha</div>
 
-  <script src="js/signin.js"></script>
+  <script src="js/signup.js"></script>
 </body>
 </html>
