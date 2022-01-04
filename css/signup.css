@@ -6,7 +6,7 @@
 }
 
 /* HTM and Body style */
-html, body {
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f5f5f5;
 }
@@ -56,16 +56,26 @@ nav .nav-container .switch {
   padding: 3px 4px;
   background-color: rgb(233, 233, 233);
   border-radius: 20px;
-}
+  position: relative;
+} 
 
-nav .nav-container .switch > div{
+nav .nav-container .switch .icon {
   background-color: #444;
   border-radius: 50%;
 }
 
+.toggleSwitch {
+  position: absolute;
+  right: 3px;
+  transition: 1s;
+}
 
-nav .nav-container .switch .fa-sun {
-  color: #ececec;
+.toggleBody {
+  background-color: #111;
+}
+
+nav .nav-container .switch .fa-moon {
+  color: #fff;
   padding: 3px;
 }
 /* ============== */
@@ -144,6 +154,7 @@ nav .nav-container .switch .fa-sun {
   letter-spacing: 1px;
   margin-top: 20px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .signin-container form input[type="submit"]:hover {
